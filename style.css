@@ -1,0 +1,354 @@
+@font-face {
+  font-family: 'JUA';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/BMJUA_subset.otf');
+}
+@font-face {
+  font-family: 'SOLMEE';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/gabia_solmee_subset.ttf');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: url('fonts/NanumGothic_subset.otf');
+}
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('fonts/NanumGothicBold_subset.otf');
+}
+
+body, button, input, select, table, textarea, p {
+	font-family: 'Nanum Gothic', serif;
+}
+
+h1, h2, h3 {
+	font-family: 'JUA', sans-serif;
+	font-weight: normal;
+}
+
+html, body, div, p, h1, h2, h3, h4, hr {
+	margin: 0;
+	padding: 0;
+	-webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	display: block;
+}
+
+a {
+    color: #88F;
+    margin: 0;
+	padding: 0;
+    text-decoration: none;
+	-webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	background-color: #FFF7F8;
+}
+
+@media (max-width: 599px) { html { font-size: 18px; } }
+@media (min-width: 600px) { html { font-size: 22px; } }
+
+h1 {
+	color: #FFF7F8;
+	font-size: 1.80rem;
+	padding-top: 1.0rem;
+    font-weight: normal;
+}
+
+h2 {
+	color: #151114;
+	font-size: 2.0rem;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-align: center;
+	font-family: 'JUA', sans-serif;
+    font-weight: normal;
+}
+
+h3 {
+    color: #151114;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.25rem;
+}
+
+h3 {
+	color: #453541;
+}
+
+ul {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 1em;
+}
+
+li {
+    margin-top: 0.2rem;
+    margin-bottom: 0.2rem;
+    color: #453541;
+}
+
+.JUA { font-family: 'JUA', sans-serif; }
+.SOLMEE { font-family: 'SOLMEE', sans-serif; }
+.center { text-align: center; }
+.right { text-align: right; }
+.bg_white { background-color: #fff; }
+.bg_black { background-color: #000; }
+.padding_1 { padding: 1.0rem; }
+.margin_0_5 { margin: 0.5rem; }
+.margin_b_1_5 { margin-bottom: 1.5rem; }
+
+.header_size {
+    width: 100%;
+    height: 450px;
+}
+
+.header_background {
+	background-image: url("images/background.jpg");
+	background-size: cover;
+	background-position: 57% 40%;
+	display: block;
+}
+
+.header_position {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+}
+
+.header_mask {
+	background-color: rgba(0, 0, 0, .44);
+}
+
+.header_content {
+	width: 100%;
+	padding-top: 50px;
+	vertical-align: middle;
+}
+
+.header_image {
+	width: 250px;
+	height: 250px;
+	border-radius: 125px;
+}
+
+.subheader {
+	margin-top: 0.25rem;
+	line-height: 1.25rem;
+    color: #d6ced3;
+}
+
+.header_text {
+    font-size: 1.2rem;
+}
+
+.dday {
+	margin: 0.5rem;
+    color: #FFF7F8;
+}
+
+.intro_background {
+    background-image: url("images/musical-notes.png");
+    background-size: cover;
+    background-position: 50% 25%;
+}
+
+@media (min-width: 600px) {
+    .width_limit {
+        width: 540px;
+        margin: 1.0rem auto;
+    }
+}
+
+.intro_text {
+    letter-spacing : -0.05rem;
+	margin-left: 15%;
+	margin-right: 0.3rem;
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+    color: #453541;
+}
+
+.sender {
+    letter-spacing : -0.05rem;
+    font-size: 0.90rem;
+	margin-top: 2rem;
+    margin-bottom: 0.5rem;
+    color: #151114;
+}
+
+.sender_name {
+	font-size: 1.0rem;
+	letter-spacing : -0.05rem;
+}
+
+.gallery_seperator {
+	width: 100%;
+	height: 0.25rem;
+}
+
+#gallery_swpier_wrap {
+	position: relative;
+    height: 280px;
+}
+
+.gallery_image {
+    width: 100%;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-slide {
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery-top {
+    height: 85%;
+    width: 100%;
+}
+
+.gallery-thumbs {
+    height: 15%;
+    box-sizing: border-box;
+    padding: 0.25rem 0;
+}
+
+.gallery-thumbs .swiper-slide {
+    height: 100%;
+    width: 20%;
+    opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+}
+
+#preloader {
+    width: 0px;
+    height: 0px;
+}
+
+.calendar_wrap {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.calendar_border { height: 15px; }
+.calendar_top_border { background-image: url(images/boundary_top.png); }
+.calendar_bottom_border { background-image: url(images/boundary_bottom.png); }
+
+.row {
+    width: 100%;
+    height: 2rem;
+    display: table;
+    color: #666;
+}
+
+.row >div {
+    display: table-cell;
+    margin: auto;
+    width: 14.28%;
+}
+
+.sunday { color: #f88; }
+.holiday { color: #f88; }
+.saturday { color: #88f; }
+.subtext { font-size: 0.75rem; }
+.wedding_day { 
+    color: darkblue;
+    font-size: 1.33rem;
+    font-weight: bold;
+}
+
+.detail_text {
+    font-size: 0.7rem;
+    color: #BAB;
+    font-weight: bold;
+}
+
+.time_detail {
+    margin-right: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.map {
+    position: relative;
+	width: 100%;
+    height: auto;
+    background-image: url("images/map.png");
+    background-size: cover;
+}
+
+.float_right { float: right; }
+
+.map_button {
+	width: auto;
+	height: 2.0rem;
+}
+
+.map_button_scaled {
+    width: auto;
+    height: 1.7rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+}
+
+.hidden_map {
+    width: 100%;
+    height: auto;
+    visibility: hidden;
+}
+
+.map div {
+    position: absolute;
+    text-align: center;
+    font-family: 'JUA', sans-serif;
+    text-shadow: 0px 2px 2px rgba(150, 150, 150, 0.8);
+    color: #453541;
+}
+
+.destination {
+    color: darkred;
+}
+
+@media (max-width: 399px) { .map div { font-size: 0.8rem; } }
+@media (max-width: 399px) { .destination { font-size: 1.2rem; } }
+@media (min-width: 400px) and (max-width: 599px) { .map div { font-size: 1.0rem; } }
+@media (min-width: 400px) and (max-width: 599px) { .destination { font-size: 1.5rem; } }
+@media (min-width: 600px) { .map div { font-size: 1.2rem; } }
+@media (min-width: 600px) { .destination { font-size: 2.0rem; } }
+@media (min-width: 600px) { .map { width: 600px; margin: 0.0rem auto; } }
+
+.map_embed {
+    color: #888;
+    text-shadow: none !important;
+}
+
+.footer {
+    color: #CCC;
+    padding: 0.8rem;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
